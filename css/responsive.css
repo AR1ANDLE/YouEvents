@@ -1,0 +1,154 @@
+
+@import url("/css/style.css");
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) {
+    header {
+        min-height: 9vh;
+        width: 100%;
+        background-color: brown;
+        display: flex;
+    }
+
+    .page-info {
+        min-height: 40vh;
+        background-color: red;
+        padding: 48px 16px;
+    }
+
+    .inscription-form {
+        min-height: 100vh;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0;
+    }
+
+    .inscription-content {
+        width: 95%;
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 24px;
+    }
+    .inscription-content > .heading {
+        background: gray;
+        width: 100%;
+        min-height: 15vh;
+    }
+
+    .inscription-content > .fields {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inscription-content > .fields > .field {
+        width: 100%;
+        min-height: 15vh;
+        background-color: aquamarine;
+    }
+
+    .inscription-content > .event-picker,
+    .inscription-content > .level-picker {
+        min-height: 20vh;
+        width: 100%;
+        background-color: blueviolet;
+    }
+
+    .inscription-content > .msg-field {
+        min-height: 30vh;
+        width: 100%;
+        background-color: blueviolet;
+    }
+
+    .inscription-content > .terms {
+        min-height: 15vh;
+        width: 100%;
+        background-color: blueviolet;
+    }
+
+    footer {
+        min-height: 70vh;
+        padding: 24px 16px 16px;
+        background-color: var(--background-black);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+    }
+
+    footer > .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer > .row > .youcode,
+    footer > .row > .navigation,
+    footer > .row > .contact {
+        width: 100%;
+        max-width: 600px;
+        min-height: 20vh;
+        background-color: aliceblue;
+        margin: 0;
+    }
+
+    footer > .copyright {
+        width: 100%;
+        margin-top: auto;
+        padding-top: 16px;
+        text-align: center;
+        min-height: 8vh;
+        border-top: 2px solid pink;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .inscription-content {
+        padding: 32px;
+        align-items: flex-start;
+    }
+
+    .inscription-content > .fields {
+        flex-direction: row;
+        min-height: 20vh;
+    }
+
+    .inscription-content > .fields > .field {
+        flex: 1;
+        min-width: 0;
+        min-height: 20vh;
+        margin: 0;
+    }
+
+    footer > .row {
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+        height: 50vh;
+    }
+
+    footer > .row > .youcode,
+    footer > .row > .navigation,
+    footer > .row > .contact {
+        width: 30%;
+        height: 100%;
+        margin: 0;
+    }
+
+    footer > .copyright {
+        width: 100%;
+    }
+}
