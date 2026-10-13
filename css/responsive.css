@@ -87,7 +87,6 @@
     }
 
     footer {
-        min-height: 70vh;
         padding: 24px 16px 16px;
         background-color: var(--background-black);
         display: flex;
@@ -104,6 +103,7 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        border-bottom: 1px solid #fff;
     }
 
     footer > .row > .youcode,
@@ -112,17 +112,27 @@
         width: 100%;
         max-width: 600px;
         min-height: 20vh;
-        background-color: aliceblue;
-        margin: 0;
+        color: var(--background-white);
+        font-size: 12px;
     }
-
+    footer .heading {
+        color: var(--background-white);
+        font-size: 20px;
+    }
+    footer .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .navigation > a {
+        color: #fff;
+        padding: 5px 0;
+        font-family: "DM sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
     footer > .copyright {
         width: 100%;
-        margin-top: auto;
-        padding-top: 16px;
-        text-align: center;
-        min-height: 8vh;
-        border-top: 2px solid pink;
+        color: #fff;
     }
     .large-menu {
         display: none;
