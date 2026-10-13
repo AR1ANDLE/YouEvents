@@ -10,6 +10,7 @@
     --secondary: #0F766E;
     --background-black: #1C1917;
     --background-white: #FFFFFF;
+    --border-color : #E7E5E4;
     --text : #57534E;
 }
 
@@ -17,21 +18,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-decoration: none;
+    border: none;
+    list-style: none;
 }
 
-button {
-    border: none;
-}
 
 /* Global Compenents */
 
 .heading {
-    font-family: Bricolage Grotesque;
     font-weight: 700;
     font-style: Bold;
     font-size: 32px;
     line-height: 38px;
     letter-spacing: -0.5px;
+    color: var(--background-black);
 }
 
 .page-text {
