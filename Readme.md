@@ -1,5 +1,5 @@
 # Project Roles 
 - Scrum Master : Abdelmoughit Elmoutaouakkil
 - Developer :
-- Developer :
+- Developer : NOUHAILA MAFHOUM 
 - Developer :
