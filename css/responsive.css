@@ -1,0 +1,238 @@
+
+@import url("/css/style.css");
+
+@media screen and (min-width: 300px) {
+    header {
+        min-height: 9vh;    
+        background-color: brown;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px;
+        background-color: var(--background-white);
+        border-bottom: 1px solid var(--border-color);
+    }
+    header > h3 {
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 26px;
+        color: var(--background-black);
+    }
+    header > h3 > span {
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 26px;
+        color: var(--primary);
+    }
+    .page-info {
+        min-height: 40vh;
+        background-color: red;
+        padding: 48px 16px;
+    }
+
+    .inscription-form {
+        min-height: 100vh;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0;
+    }
+
+    .inscription-content {
+        width: 95%;
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 24px;
+    }
+    .inscription-content > .heading {
+        background: gray;
+        width: 100%;
+        min-height: 15vh;
+    }
+
+    .inscription-content > .fields {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inscription-content > .fields > .field {
+        width: 100%;
+        min-height: 15vh;
+        background-color: aquamarine;
+    }
+
+    .inscription-content > .event-picker,
+    .inscription-content > .level-picker {
+        min-height: 20vh;
+        width: 100%;
+        background-color: blueviolet;
+    }
+
+    .inscription-content > .msg-field {
+        min-height: 30vh;
+        width: 100%;
+        background-color: blueviolet;
+    }
+
+    .inscription-content > .terms {
+        min-height: 15vh;
+        width: 100%;
+        background-color: blueviolet;
+    }
+
+    footer {
+        padding: 24px 16px 16px;
+        background-color: var(--background-black);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+    }
+
+    footer > .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid #fff;
+    }
+
+    footer > .row > .youcode,
+    footer > .row > .navigation,
+    footer > .row > .contact {
+        width: 100%;
+        max-width: 600px;
+        min-height: 20vh;
+        color: var(--background-white);
+        font-size: 12px;
+    }
+    footer .heading {
+        color: var(--background-white);
+        font-size: 20px;
+    }
+    footer .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .navigation > a {
+        color: #fff;
+        padding: 5px 0;
+        font-family: "DM sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    footer > .copyright {
+        width: 100%;
+        color: #fff;
+    }
+    .large-menu {
+        display: none;
+    }
+    .menu {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        height: 90vh;
+        width: 100%;
+    }
+    .menu > a {
+        color: var(--primary);
+    }
+    .menu > button > a {
+        color: var(--background-white);
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header > #menuIcon {
+        display: none;
+    } 
+    .large-menu {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .large-menu > a {
+        font-family: "label", sans-serif;
+        color: var(--background-black);
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .large-menu > button {
+        width: 60%;
+        min-height: 36px;
+        height: 9vh;
+        padding: 2px 24px;
+        border-radius: 15px;
+        background-color: var(--primary);
+    }
+    .large-menu > button > a {
+        color: var(--background-white);
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .inscription-content {
+        padding: 32px;
+        align-items: flex-start;
+    }
+
+    .inscription-content > .fields {
+        flex-direction: row;
+        min-height: 20vh;
+    }
+
+    .inscription-content > .fields > .field {
+        flex: 1;
+        min-width: 0;
+        min-height: 20vh;
+        margin: 0;
+    }
+
+    footer > .row {
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+        height: 50vh;
+    }
+
+    footer > .row > .youcode,
+    footer > .row > .navigation,
+    footer > .row > .contact {
+        width: 30%;
+        height: 100%;
+        margin: 0;
+    }
+
+    footer > .copyright {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width : 1280px) {
+    header {
+        padding: 1% 5%;
+    }
+}
+
+
+.hidden {
+    display: none;
+}
