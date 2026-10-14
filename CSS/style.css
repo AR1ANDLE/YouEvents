@@ -3,9 +3,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-header h1 {
-    background-color: blueviolet;
-    height: 12px;
-    width: 12px;
-    font-size: large;
-}
