@@ -1,10 +1,9 @@
 
 @import url("/css/style.css");
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 375px) {
     header {
         min-height: 9vh;    
-        background-color: brown;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -226,13 +225,22 @@
     }
 }
 
-@media screen and (min-width : 1280px) {
-    header {
-        padding: 1% 5%;
-    }
-}
-
-
 .hidden {
     display: none;
+}
+@media (min-width: 1440px) {
+    .events-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .container {
+        padding: 40px 24px;
+    }
+
+    .section-heading h1 {
+        font-size: 32px;
+    }
+}
+.event4{
+    margin-bottom: 20px;
 }
