@@ -1,10 +1,9 @@
-
 @import url("/css/style.css");
 
 @media screen and (min-width: 300px) {
     header {
-        min-height: 9vh;    
-        background-color: brown;
+        min-height: 8vh;    
+        max-height: 10vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -12,61 +11,68 @@
         background-color: var(--background-white);
         border-bottom: 1px solid var(--border-color);
     }
-    header > h3 {
-        font-weight: 600;
-        font-size: 1.3rem;
-        line-height: 26px;
-        color: var(--background-black);
-    }
     header > h3 > span {
-        font-weight: 600;
-        font-size: 1.3rem;
-        line-height: 26px;
         color: var(--primary);
     }
     .page-info {
+        width: 100%;
         min-height: 40vh;
-        background-color: red;
-        padding: 48px 16px;
+        background-color: var(--primary-soft);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    .page-header {
+        min-width: 70%;
+        max-width: 90%;
+    }
+    .page-header > p {
+        margin-top: 10px;
+        width: 90%;
+        font-weight: 400;
+        color: var(--text);
+    }
     .inscription-form {
         min-height: 100vh;
-        background-color: black;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 24px 0;
+        padding: 80px 0;
     }
 
     .inscription-content {
         width: 95%;
-        background-color: pink;
+        background-color: var(--background-white);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
         padding: 24px;
     }
-    .inscription-content > .heading {
-        background: gray;
+    .inscription-content > .fields {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         min-height: 15vh;
+        gap: 10px;
     }
-
-    .inscription-content > .fields {
+    .field {
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 10px;
     }
-
-    .inscription-content > .fields > .field {
-        width: 100%;
-        min-height: 15vh;
-        background-color: aquamarine;
+    .field > label {
+        display: flex;
+        flex-direction: column;
     }
-
+    .field > label > input {
+        min-height: 48px;
+        padding: 12px 16px;
+        border-radius: 5px;
+        border: 1px solid var(--border-input);
+    }
     .inscription-content > .event-picker,
     .inscription-content > .level-picker {
         min-height: 20vh;
@@ -78,7 +84,7 @@
         min-height: 30vh;
         width: 100%;
         background-color: blueviolet;
-    }
+    } 
 
     .inscription-content > .terms {
         min-height: 15vh;
@@ -88,7 +94,7 @@
 
     footer {
         padding: 24px 16px 16px;
-        background-color: var(--background-black);
+        background-color: var(--bg-inverse);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -112,11 +118,11 @@
         width: 100%;
         max-width: 600px;
         min-height: 20vh;
-        color: var(--background-white);
+        color: var(--text-inverse);
         font-size: 12px;
     }
     footer .heading {
-        color: var(--background-white);
+        color: var(--text-inverse);
         font-size: 20px;
     }
     footer .navigation {
@@ -172,38 +178,25 @@
     }
     .large-menu > a {
         font-family: "label", sans-serif;
-        color: var(--background-black);
+        color: var(--text);
         font-weight: 600;
-        font-size: 16px;
+        font-size: 0.8rem;
     }
     .large-menu > button {
-        width: 60%;
+        width: 50%;
         min-height: 36px;
-        height: 9vh;
         padding: 2px 24px;
         border-radius: 15px;
         background-color: var(--primary);
     }
     .large-menu > button > a {
-        color: var(--background-white);
+        color: var(--text-inverse);
         font-weight: 600;
-        font-size: 16px;
+        font-size: 0.8rem;
     }
     .inscription-content {
         padding: 32px;
         align-items: flex-start;
-    }
-
-    .inscription-content > .fields {
-        flex-direction: row;
-        min-height: 20vh;
-    }
-
-    .inscription-content > .fields > .field {
-        flex: 1;
-        min-width: 0;
-        min-height: 20vh;
-        margin: 0;
     }
 
     footer > .row {
@@ -224,9 +217,24 @@
     footer > .copyright {
         width: 100%;
     }
+
+    .fields {
+        width: 100%;
+        margin-top: 15px;
+        flex-direction: row;
+        min-height: 15vh;
+    }
+    .fields > .field {
+        flex-direction: row;
+        width: 100%;
+        min-height: 15vh;
+    }
+    .field > label {
+        width: 50%;
+    }
 }
 
-@media screen and (min-width : 1280px) {
+@media screen and (min-width : 1024px) {
     header {
         padding: 1% 5%;
     }

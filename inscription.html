@@ -14,9 +14,7 @@
     <header>
         <h3>Youcode <span>Events</span></h3>
         <div class="menu-icon" id="menuIcon">
-            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 12H21M3 6H21M9 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
         </div>
         <nav class="large-menu">
             <a href="#">Acceuil</a>
@@ -33,21 +31,51 @@
     </nav>
     <main>
         <section class="page-info">
-            <h2 class="heading"></h2>
-            <p class="page-text"></p>
+            <div class="page-header">
+                <h2>Inscription</h2>
+                <p class="lg-text">Réservez votre place à un atelier, une conférence, un hackathon ou une rencontre. L'inscription est gratuite.</p>
+            </div>
         </section>
         <section class="inscription-form">
             <form action="" class="inscription-content">
-                <div class="heading"></div>
-                <div class="fields">
-                    <div class="field"></div>
-                    <div class="field"></div>
+                <div>
+                    <h2 class="heading">Vos informations</h2>
+                    <p class="page-text">Les champs marqués * sont obligatoires.</p>
                 </div>
                 <div class="fields">
-                    <div class="field"></div>
-                    <div class="field"></div>
+                    <div class="field">
+                        <label>
+                            <span class="label-sm">Nom *</span>
+                            <Input placeholder="Votre nom" type="text" required></Input>
+                        </label>
+                        <label>
+                            <span class="label-sm">Prénom *</span>
+                            <Input placeholder="Votre Prénom" type="text" required></Input>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label>
+                            <span class="label-sm">Adresse e-mail *</span>
+                            <Input placeholder="email@example.com" type="email" required></Input>
+                        </label>
+                        <label>
+                            <span class="label-sm">Téléphone</span>
+                            <Input placeholder="+212 6 - - - - -" ></Input>
+                        </label>
+                    </div>
                 </div>
-                <div class="event-picker"></div>
+                <div class="event-picker">
+                    <label for="">
+                        <span>Événement choisi *</span>
+                        <select name="event-picker" id="eventPicker">
+                            <option value="">Choisir une evenement</option>
+                            <option value="">Outdoor</option>
+                            <option value="">Music</option>
+                            <option value="">Coding</option>
+                            <option value="">Chess</option>
+                        </select>
+                    </label>
+                </div>
                 <div class="level-picker"></div>
                 <div class="msg-field"></div>
                 <div class="terms"></div>
@@ -60,7 +88,7 @@
         <div class="row">
             <div class="youcode">
                 <h3 class="heading">YouCode Events</h3>
-                <p class="page-text">Les ateliers, conférences, hackathons et rencontres de YouCode, réunis au même endroit.</p>
+                <p class="sm-txt" style="color: #fff; margin: 10px 0 0 0;">Les ateliers, conférences, hackathons et rencontres de YouCode, réunis au même endroit.</p>
             </div>
             <div class="navigation">
                 <h3 class="heading">Navigation</h3>
