@@ -124,9 +124,6 @@ header{
 }
 
 
-
-
-
 .intervenant-card h3 {
     margin: 0 0 6px;
     font-size: 20px;
@@ -186,7 +183,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     width: calc(50% - 8px);
     margin-bottom: 0;
@@ -203,7 +200,7 @@ header{
     height: 40px;
     margin: 0 0 12px;
     border-radius: 8px;
-    background-color: #f5f5f4;
+    background-color: #65c9d6;
 }
 
 .partenaire-card span {
