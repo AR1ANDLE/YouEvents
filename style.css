@@ -17,9 +17,12 @@
         margin-top: 12px; */
         border: 1px solid red;
     }
-.hero-p{
-    border: 1px solid red;
-}
+
+    .hero-p {
+        border: 1px solid red;
+        gap: 30px;
+    }
+
     .image>img {
         width: 100%;
         border-radius: 10px;
@@ -43,9 +46,9 @@
 
     }
 
-    .botton2 :hover{
+    .botton2 :hover {
         background-color: #fff;
-        
+
     }
 
     .hero-BOX {
@@ -55,7 +58,7 @@
     }
 
     .grand-titre {
-        margin: 1rem;
+        /* margin: 1rem; */
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 700;
         font-style: Bold;
@@ -136,18 +139,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* justify-content: space-between; */
         height: auto;
     }
 
     .deuxieme-titre {
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
         font-family: Bricolage Grotesque;
         font-weight: 700;
         font-style: Bold;
         font-size: 32px;
         line-height: 38px;
         letter-spacing: -0.5px;
-        margin-left: 12px;
+        /* margin-left: 12px; */
     }
 
     .less-cardes {
@@ -204,11 +208,14 @@
     }
 
     .titre-cards {
+        border: 1px solid red;
+        margin: 2rem;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        width: 80%;
     }
 
     .h3 {
