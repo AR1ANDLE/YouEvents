@@ -142,51 +142,10 @@ h3 {
 
 /* Inscription Page */
 
-.select {
-    padding: 8px;
-    width: 320px;
-    min-height: 78px;
-}
-
-.select > select {
-    width: 320;
-    height: 50;
-    min-height: 48px;
-    gap: 8;
-    padding: 12px 16px;
-    border-radius: 15px;
-    border-width: 1px solid var(--border-input);
-}
-
 .text-area {
     min-height: 120px;
     opacity: 1;
     padding: 12px 16px;
     border-radius: 15px;
     border: 1px solid var(--border-input);
-}
-
-.checkbox {
-    width: 24px;
-    height: 24px;
-    border-radius: 4px;
-    border: 2px solid var(--border-input);
-    background-color: #fff;
-}
-
-.checkbox-checked {
-    background-color: var(--primary);
-}
-
-.radio {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 2px solid var(--border-input);
-    background-color: #fff;
-}
-
-.radio-checked {
-    border: 2px solid var(--primary);
-    color: var(--primary);
 }

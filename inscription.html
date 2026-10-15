@@ -65,21 +65,44 @@
                     </div>
                 </div>
                 <div class="event-picker">
-                    <label for="">
-                        <span>Événement choisi *</span>
-                        <select name="event-picker" id="eventPicker">
-                            <option value="">Choisir une evenement</option>
-                            <option value="">Outdoor</option>
+                    <label for="eventPicker"" class="label-sm">Événement choisi *</label>
+                        <select class="select txt" name="eventselect" id="eventPicker">
+                            <option value="" disabled selected hidden>Choisir un événement</option>
                             <option value="">Music</option>
                             <option value="">Coding</option>
                             <option value="">Chess</option>
                         </select>
+                </div>                
+                <div class="level-picker">
+                    <h3 class="label-sm">Niveau *</h3>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="niveau" value="debutant" required>
+                            <span>Débutant</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="niveau" value="intermediaire">
+                            <span>Intermédiaire</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="niveau" value="avance">
+                            <span>Avancé</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="msg-field">
+                    <label>
+                        <span class="label-sm">Message (facultatif)</span>
+                        <textarea type="text" name="" id="" placeholder="Vos attentes, vos questions…"></textarea>
                     </label>
                 </div>
-                <div class="level-picker"></div>
-                <div class="msg-field"></div>
-                <div class="terms"></div>
-                <button class="primary-btn"></button>
+                <div class="terms">
+                    <input type="checkbox" name="" id="termsbox" required>
+                    <label for="termsbox">J'accepte que mes données servent à gérer mon inscription. *</label>
+                </div>
+                <button type="submit" class="default-btn" style="margin-top: 10px;">Valider mon inscription</button>
             </form>
         </section>
     </main>
