@@ -5,23 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil / Mobile 375</title>
-    <link rel="stylesheet" href="/YouEvents/css/style.css">q
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- <header>
-        <div class="logo"><img src="../YouEvents/les-images/logo-youcod.png" alt="youcode-logo"></div>
-        <div>
-            <nav class="navigation-bar">
-                <lu>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Événements</a></li>
-                    <li><a href="#">Intervenants</a></li>
-                </lu>
+    <header>
+        <h3>Youcode <span>Events</span></h3>
+        <div class="menu-icon" id="menuIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
         </div>
-        <button>S'inscrire</button>
+        <nav class="large-menu">
+            <a href="#">Acceuil</a>
+            <a href="#">Événements</a>
+            <a href="#">Intervenants</a>
+            <button><a href="#">S'inscrire</a></button>
         </nav>
-    </header> -->
+    </header>
+    <nav class="menu hidden">
+        <a href="#" class="heading">Acceuil</a>
+        <a href="#" class="heading">Événements</a>
+        <a href="#" class="heading">Intervenants</a>
+        <button class="primary-btn"><a href="#">S'inscrire</a></button>
+    </nav>
     <main>
         <section class="hero">
             <div class="hero-BOX">
@@ -298,16 +304,30 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <h3>YouCode Events</h3>
-            <p>Les ateliers, conférences, hackathons et rencontres de YouCode, réunis au même endroit.</p>
-        </div>
-        <div>
 
+    <footer>
+        <div class="row">
+            <div class="youcode">
+                <h3 class="heading">YouCode Events</h3>
+                <p class="sm-txt" style="color: #fff; margin: 10px 0 0 0;">Les ateliers, conférences, hackathons et rencontres de YouCode, réunis au même endroit.</p>
+            </div>
+            <div class="navigation">
+                <h3 class="heading">Navigation</h3>
+                <a class="page-text" href="#">Accueil</a>
+                <a class="page-text" href="#">Événements</a>
+                <a class="page-text" href="#">Intervenants et partenaires</a>
+                <a class="page-text" href="#">Inscription</a>
+            </div>
+            <div class="contact navigation">
+                <h3 class="heading">Contact</h3>
+                <a class="page-text" href="#">contact@youcode-events.example</a>
+                <a class="page-text" href="#">Youssoufia · Safi · Nador</a>
+            </div>
         </div>
-        <div></div>
-        <div></div>
+        <div class="border"></div>
+        <section class="copyright">
+            <p class="page-text">© 2026 YouCode Events — site fictif réalisé en formation.</p>
+        </section>
     </footer>
 </body>
 
