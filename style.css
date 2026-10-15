@@ -159,6 +159,12 @@
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+    .stat-box{
+      display: flex;
+      flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 
     .plus-info {
         font-family: DM Sans;
@@ -291,13 +297,14 @@
     }
 
     .Chiffres-clés {
-        background-color: #C2410C
+        background-color: #C2410C;
+
     }
 
     .stat-box {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content:space-around;
 
     }
 
@@ -310,8 +317,13 @@
     }
 
     .Stat {
+        padding-left: 1rem;
         padding-bottom: 1rem;
         padding-top: 1rem;
+        border: 1px solid #fff ;
+        min-width:200px;
+        max-width:200px;
+        width: 100px;
     }
 
     .Catégories {
