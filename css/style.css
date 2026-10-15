@@ -311,28 +311,24 @@
     #white-color {
         color: #fff;
     }
-
     .stat-p {
         color: #fff;
     }
-
     .Stat {
         padding-left: 1rem;
         padding-bottom: 1rem;
         padding-top: 1rem;
-        border: 1px solid #fff ;
+        /* border: 1px solid #fff ; */
         min-width:200px;
         max-width:200px;
         width: 100px;
     }
-
     .Catégories {
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
         /* align-items: center; */
     }
-
     .Catégories-box {
         margin-top: 1rem;
     }
