@@ -1,6 +1,6 @@
 @import url("/css/style.css");
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 300px) {
     header {
         min-height: 8vh;    
         max-height: 10vh;
@@ -26,7 +26,6 @@
         font-weight: 400;
         color: var(--text);
     }
-
     .inscription-form {
         min-height: 100vh;
         display: flex;
@@ -266,9 +265,12 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    /* Nissrine */
     .events-grid{
      grid-template-columns: repeat(2, minmax(0, 1fr))
     }
+
     header > #menuIcon {
         display: none;
     } 
@@ -297,7 +299,6 @@
         font-weight: 600;
         font-size: 0.8rem;
     }
-    
     .inscription-content {
         padding: 32px;
         align-items: flex-start;
@@ -354,31 +355,7 @@
     }
 }
 
-
-.hidden {
-    display: none;
-}
-@media screen and (min-width: 768px) {
-     .intervenants-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 24px;
-    }
-
-    .intervenant-card {
-        width: calc(50% - 12px);
-        margin-bottom: 0;
-    }
-    .partenaires-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-
-    .partenaire-card {
-        width: calc((100% - 32px) / 3);
-    }
+@media (min-width: 1440px) {
     .events-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -386,6 +363,11 @@
         font-size: 32px;
     }
 }
-  .event4{
+.event4{
     margin-bottom: 20px;
+}
+
+
+.hidden {
+    display: none;
 }
