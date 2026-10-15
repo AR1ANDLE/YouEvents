@@ -1,159 +1,52 @@
-/* Imports  */
 
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-/* Colors */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --bg-page : #FAFAF9;
-    --bg-surface : #FFFFFF;
-    --bg-muted: #F5F5F4;
-    --bg-inverse: #1C1917;
     --primary : #c2410c;
-    --primary-hover : #9A3412;
     --primary-soft: #FFEDD5;
     --secondary: #0F766E;
-    --secondary-soft: #CCFBF1;
-    --text-primary : #1C1917;
-    --text-secondary : #57534E;
-    --text-inverse : #FFFFFF;
-    --border-default: #E7E5E4;
-    --border-input: #78716C;
-    --succes : #15803D;
-    --error : #B91C1C;
+    --background-black: #1C1917;
+    --background-white: #FFFFFF;
+    --border-color : #E7E5E4;
+    --text : #57534E;
 }
-
-/* Typography */
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
     text-decoration: none;
     border: none;
     list-style: none;
 }
 
-body {
-    background-color: var(--background-muted);
-}
-
-h1 {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 46px;
-    letter-spacing: -0.5px;
-    color: var(--text-primary);
-}
-
-.h2 {
-    font-family: "Bricolage Grotesque", sans-serif;
+.heading {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     letter-spacing: -0.5px;
-    color: var(--text-primary);
+    color: var(--background-black);
 }
 
-h3 {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    color: var(--text-primary);
-}
-
-.lg-txt {
+.page-text {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
-    font-size: 20px;
-    color: var(--text-secondary);
-}
-
-.txt {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--text-secondary);
-}
-
-.sm-txt {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--text-secondary);
-}
-
-.label-base {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: 0px;
-    color: var(--text-primary);
 }
 
-.label-sm {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0px;
-    color: var(--text-primary);
-}
-
-/* Global Components */
-
-.default-btn {
+.primary-btn {
+    margin: 20px 0 0 0;
+    width: 60%;
+    height: 9vh;
     min-height: 48px;
     padding: 12px 24px;
     border-radius: 15px;
     background-color: var(--primary);
-    color: var(--text-inverse);
 }
-
-.default-btn:hover {
-    background-color: var(--primary-hover);
-}
-
-.default-btn:focus {
-    background-color: var(--primary);
-    border: 3px solid var(--secondary);
-}
-
-.secondary-btn {
-    min-height: 48px;
-    padding: 12px 24px;
-    border-radius: 15px;
-    border: 2px solid var(--primary);
-    background-color: var(--bg-surface);
-    color: var(--primary);
-}
-
-.secondary-btn:hover {
-    background-color: var(--primary-soft);
-}
-
-.secondary-btn:focus {
-    border: 3px solid var(--secondary);
-}
-
-/* Inscription Page */
-
-.text-area {
-    min-height: 120px;
-    opacity: 1;
-    padding: 12px 16px;
-    border-radius: 15px;
-    border: 1px solid var(--border-input);
-}
-
-
-/* Nissrine */
-
-
 .Def{
     background-color: #FFEDD5;
     padding: 50px 30px;
@@ -170,14 +63,16 @@ h3 {
 }
 
 .event-card {
-    max-width: 400px;
-    min-width: 320px;
+    height:450px;
+    max-width: 320px;
+    min-width: 350px;
     overflow: hidden;
     background-color: var(--white);
     border: 1px solid #e8e8e8;
     border-radius: 12px;
     box-shadow: 0 2px 6px #0000000d;
     display: grid;
+    gap: 10px;
 }
 
 .event-card img {
