@@ -265,6 +265,12 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    /* Nissrine */
+    .events-grid{
+     grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
     header > #menuIcon {
         display: none;
     } 
@@ -347,6 +353,18 @@
         letter-spacing: -0.5px;
         color: var(--text-primary);
     }
+}
+
+@media (min-width: 1440px) {
+    .events-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .section-heading h1 {
+        font-size: 32px;
+    }
+}
+.event4{
+    margin-bottom: 20px;
 }
 
 
