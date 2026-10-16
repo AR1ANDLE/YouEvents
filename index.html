@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil / Mobile 375</title>
-    <link rel="stylesheet" href="/YouEvents/css/style.css">q
+    <link rel="stylesheet" href="/YouEvents/css/style.css">
 </head>
 
 <body>
@@ -24,26 +24,31 @@
     </header> -->
     <main>
         <section class="hero">
-            <div class="hero-BOX">
+
+
+
+
                 <div class="hero-p">
-                    <div class="box-label">
-                        <!-- is it a button -->
-                        <p class="lable">
-                            Saison 2026-2027
-                        </p>
-                    </div>
-                    <div>
-                        <h1 class="grand-titre">
-                            Tous les événements YouCode, au même endroit
-                        </h1>
-                    </div>
-                    <div>
-                        <p class="paragraphe">
-                            Ateliers, conférences, hackathons et rencontres avec des professionnels : consultez le
-                            programme
-                            et
-                            inscrivez-vous en quelques clics.
-                        </p>
+                    <div class="text">
+                        <div class="box-label">
+                            <!-- is it a button -->
+                            <p class="lable">
+                                Saison 2026-2027
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="grand-titre">
+                                Tous les événements YouCode, au même endroit
+                            </h1>
+                        </div>
+                        <div>
+                            <p class="paragraphe">
+                                Ateliers, conférences, hackathons et rencontres avec des professionnels : consultez le
+                                programme
+                                et
+                                inscrivez-vous en quelques clics.
+                            </p>
+                        </div>
                     </div>
                     <div class="les-button">
                         <div class="botton1">
@@ -54,10 +59,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="image">
-                    <img src="./assets/images/first-section-pic.png" alt="Image héros" style="object-fit: contain;">
+                <div class="image-div">
+                    <img id="hero-img" src="./assets/images/first-section-pic.png" alt="Image héros"
+                        style="object-fit: contain;">
                 </div>
-            </div>
+            
         </section>
         <section class="Prochains-événements">
             <div class="titre-cards">
@@ -261,7 +267,7 @@
                     <div class="card-Catégorie">
                         <div class="card-icon">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQUlEQVR4nO2ayWsUQRTG+6KJ4I56UsENl79B8CQEE5L5vlAggo4HCYggSv4DxYgLinjwIF5UPEVRE08uiEQIevGgxJioeFEP0UvMTL9yaXljddIZR7PV9Ex0PigYqqbr1a9e1euaVxMEnhUBKyzZZoHbluwX4IsW/WzJW9oWGbM8qFZFDQ0LBehwg47+Vgpw5LGouXlBUE0KyQ0WeDERQInSHxqzJagGhZnMZiE/TwMi9s6n0JiNFYWIjFlqgdfThRgtwEDU0rK4YiBCnpsxROwZ8kxFIHLGrBZAvIEAMgKsTB3Eku2+IBJL7FDqIAI88A0iwL3UQSzwzrtHyLepgwgZevcIGQbVpKihoU7I7hID7dK2YLYoUhDgTgmQ7qoDsf73R6HUQMqh2h4ptwQ4L+SFtJeWkKcEOOkNRF9UxS+rNEBsCbveQdLYI7YqQDzsEZsGyD+ztOysBAGeCzmU9qFRyCG17Q1EyPtC/oiy2fqi2fLrEeBN3H9kzLwCHHDXG4gFrmmneWPWJOG8ewRjg85nMutc/VWfIIed63cX13n2yMHERO0trpuxNInmOu2M63ItLau8Jh/IMJl8sOQNrde8mTcQ1/GgAMORMYviOiHPelxWp+N+NcdVSL0CA14hCiDAAWewY9RgY+MSNeZhSb1KJugEOOHa9nsH0Sgi5EchR5JLICQ3adrTV8o092vJ5gT4kIySXhWSrc54T/KokTdmvcb7aXjiZXIPRG1tc4R86GzsDMopDYduIBeT9XpFIMBR3UeT8MKwkEciY+aP6xu45D3kTnAP0hvDRMbMHdfe1LRMgH2WvGmBvtGLHqBP67RNv1PUZ10MIUCv2ig7SCKqPHWGH80kZ+v2RI8LwU+SUTEV6axZ4IqD0c15fCpXA24yTuizbr9crugNlpC7hHzvgHQJdQqwR48zyaijn/PkWmltzVryenxFp89qH0E1KMpm6917ZrDEG3uocIr9PWIN6DNlC7EzlYbTCa4c2r0fO8qpP4EEs022BlJlqoHU9D/rK7lDz0We79nzAjy2mcy2dCCA7Zoa8gVQAui7zWS2lh2kMGtlgrBjx5quNEAm/OFUYpa/6T+IJlss+WyqA/sJ76CgPCcBYvMAAAAASUVORK5CYII="
-                                alt="microphone" >
+                                alt="microphone">
                         </div>
                         <div>
                             <h3 class="h3">Conférences</h3>
@@ -273,7 +279,7 @@
                     <div class="card-Catégorie">
                         <div class="card-icon">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABi0lEQVR4nO3YzUrEMBAH8CCLrh8H8QN8m157KGxnILeFHhSfwKPSh1JQVz14FZbVi76KKchIoexK3XT7kaQpzB9y7KQ/JiEhQnA4HA6Hw+EIkvIoQ7w0VU8hnpOUp8JlaDI5VIhvGSJlADdd62UAV0WtL5LyTDhHrMZ1Z8RqfFrHFMtpXpqYFOILBcGocb0gGOXflutlAB8URScuO0EK4JWkPGhdV8pdBfDkBEOWEE4xVIWYTveNTGIbQ44QGzGI760xWgTiLJ/QNGI5bxjuKMQ7I5i+EEYxfSOMYCr2xKNLRAlzuxYTx8diCIgamMU/jPbEBnigJBmLnkNJMs7/ZQ1mnv+7150oh6TcruzMYCBhjSXmO4Ya7RNPMdQE4SuG9GeJHuEbhrogfMFQfnlEnHVC9I0h/Q24OaIvDNlAuMZYRbjCUBTtWUfYxhSIZyeIGs9B962eg9J0S4OYLy+DtqLpTNq2ngK4UAA/TjqxAdMa8ffdt8AsnCFsPWJ/xzFaX04cDofD4XDEMPILs2Lk/w/pEpAAAAAASUVORK5CYII="
-                                alt="average-math" >
+                                alt="average-math">
                         </div>
                         <div>
                             <h3 class="h3">Hackathons</h3>
@@ -291,7 +297,7 @@
                             <h3 class="h3">Rencontres</h3>
                         </div>
                         <div>
-                            <p class="text-de-categories" >10 événements</p>
+                            <p class="text-de-categories">10 événements</p>
                         </div>
                     </div>
                 </div>
