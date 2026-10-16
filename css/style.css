@@ -152,10 +152,13 @@ h3 {
 
 .les-button{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* max-width: 400px; */
+    /* border: 1px solid red ; */
+    align-items: center;
+    /* width: 60%; */
 }
-
-<<<<<<< HEAD
 
 @media screen and (min-width:376px) {
     .image {
@@ -166,12 +169,13 @@ h3 {
         /* margin-bottom: 12px;
         margin-left: 15px;
         margin-top: 12px; */
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     .hero-p {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         /* border: 1px solid red; */
         /* gap: 30px; */
     }
@@ -234,11 +238,12 @@ h3 {
         padding: 5px 10px;
     }
     .les-button{
-        display: flex;
+
+        /* display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        gap: 15px;
+        /* flex-direction: column; */
+        gap: 15px; 
     }
     .botton1 {
         /* display: flex;
@@ -248,16 +253,16 @@ h3 {
         margin-top: 6px;
         margin-bottom: 6px;
         padding: 3px;
-        width: 360px;
-        border: 1px solid red;
+        width: 340px;
+        /* border: 1px solid red; */
     }
 
     .botton2 {
         align-items: center;
         padding: 3px;
-        margin-bottom: 9px;
-        border: 1px solid red;
-        width:360px; 
+        /* margin-bottom: 9px; */
+        /* border: 1px solid red; */
+        width:300px; 
 
     }
 
@@ -341,7 +346,7 @@ h3 {
         min-width: 350px;
         max-width: 350px;
         height: 450px;
-        border: 1PX solid red;
+        /* border: 1PX solid red; */
     }
 
     .table-image {
@@ -371,7 +376,7 @@ h3 {
     }
 
     .titre-cards {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin: 2rem;
         display: flex;
         flex-wrap: wrap;
@@ -536,7 +541,7 @@ h3 {
         height: 50%;
     }
 } */
-=======
+/* ************** */
 /* Nissrine */
 
 
@@ -611,4 +616,4 @@ h3 {
     margin-top: 8px;
     font-weight: bold;
 }
->>>>>>> 2987181b050068f8ff4fa7675c7d18da7bde4a52
+/* >>>>>>> 2987181b050068f8ff4fa7675c7d18da7bde4a52 */
