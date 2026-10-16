@@ -733,16 +733,3 @@
         width: auto;
     }
 }
-
-@media (min-width: 1440px) {
-    .events-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-    .section-heading h1 {
-        font-size: 32px;
-    }
-}
-
-.event4{
-    margin-bottom: 20px;
-}
