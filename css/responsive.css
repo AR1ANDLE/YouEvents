@@ -272,7 +272,7 @@
     }
 
     .hero {
-        background-color: #FFEDD5;
+        background-color: var(--primary-soft);
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -285,8 +285,7 @@
 
     .hero-BOX {
         margin: 3vw;
-        /* border: 1px solid red; */
-        /* gap: 4vh; */
+        
     }
 
     .grand-titre {
@@ -692,8 +691,48 @@
 .hidden {
     display: none;
 }
-@media screen and (min-width: 768px) {
-     .intervenants-container {
+/* TABLETTE : 2 intervenants par ligne */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .intervenants-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+
+    .intervenant-card {
+        width: calc((100% - 24px) / 2);
+        margin-bottom: 0;
+        box-sizing: border-box;
+    }
+
+    .partenaires-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    .partenaire-card {
+        flex: 0 0 30%;
+        min-width: ;
+        box-sizing: border-box;
+    }
+}
+
+
+/* PC : 3 intervenants par ligne */
+@media screen and (min-width: 1280px) {
+
+    .intervenants,
+    .partenaires {
+        padding: 48px 5%;
+    }
+
+    .intervenants-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -701,35 +740,21 @@
     }
 
     .intervenant-card {
-         width: calc((100% - 48px) / 3);
-         margin-bottom: 0;
-         box-sizing: border-box;
+        width: calc((100% - 48px) / 3);
+        margin-bottom: 0;
+        box-sizing: border-box;
     }
+
     .partenaires-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 16px;
-    }
-    .partenaire-card {
-    
-    box-sizing: border-box;
-}
-}
-@media screen and (min-with:1280) {
-      .intervenants,
-    .partenaires {
-        padding: 48px 5%;
-    }
-    
-    .partenaires-container {
-          flex-direction: row;
         flex-wrap: nowrap;
         gap: 16px;
     }
-    .partenaires-card {
-         flex: 1;
+
+    .partenaire-card {
+        flex: 1;
         width: auto;
+        box-sizing: border-box;
     }
 }
